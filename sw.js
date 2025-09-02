@@ -2,6 +2,7 @@ const staticCacheName = 's-app-v1'
 
 const assetUrls = [
     'index.html',
+    '/js/app.js',
     '/css/main.css'
 ]
 
@@ -22,4 +23,5 @@ self.addEventListener('fetch', event => {
 async function cacheFirst(request) {
     const cached = await caches.match(request)
     return cached ?? await fetch(request)
+
 }
