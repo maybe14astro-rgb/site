@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Egor Trofimenko</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="manifest" href="manifest.json">
+    <base href="./">
+</head>
+<body>
+    <div id="header">
+        <ul>
+            <li><a class="header_text" href="index.html">Главная</a></li>
+            <li><a class="header_text" href="biography.html">Биография</a></li>
+            <li><a class="header_text" href="photo.php">Фото</a></li>
+            <li><a class="header_text" href="feedback_form.html">Оставить отзыв</a></li>
+        </ul>
+    </div>
+
+    <div id="container">
+        <div id="main">
+            <div class="main_text">
+                <h1>Трофименко Егор Артемович</h1>
+                <h2><br>-ученик группы АА-24-07</h2>
+            </div>
+            <img class="main_img" src="img/first_img.jpg">
+
+        </div>
+    </div>
+    <div id="footer">
+        <a href="tel:+79991112233">Номер телефона: +79991231337</a>
+    </div>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js', { scope: '/' });
+        }
+    </script>
+</body>
+</html>
